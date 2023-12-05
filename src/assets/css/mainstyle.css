@@ -1,0 +1,461 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.App{
+    display: flex;
+    margin: auto;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.App-dark{
+    background: #2d3941;
+}
+/* Theming */
+.dark{
+    background-color: #2d3941 !important;
+    color: whitesmoke !important;
+}
+.icons{
+    color: black ;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar { 
+    background-color: transparent;
+   
+}
+::-webkit-scrollbar-track { 
+     background-color: transparent;
+    
+}
+/* Navbar  */
+.logo {
+    width: 60px;
+}
+.nav-btn{
+    width: 77px;
+}
+.navbar-toggler:focus,.navbar-toggler {
+    box-shadow: none !important;
+    border: none !important;
+}
+/* Hero Section */
+.hero{
+    height: 75vh;
+}
+.hero-btn{
+    height: 35px;
+}
+/* Main Component */
+
+
+.main-container{
+    background-color: rgb(215, 218, 250);
+    height: 90vh;
+    width: 90vw;
+    border-radius: 12px;
+    display: flex;
+   
+}
+.main-container-dark{
+    background: rgb(64 70 80 ) ;
+}
+
+/* Slider */
+.slidebar-container{
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+    }
+    
+
+.sb-header {
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.sb-search {
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px 5px;
+    margin: 5px;
+    display: flex;
+   align-items: center;
+}
+.sb-conversation {
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px 5px;
+    margin: 5px;
+    display: grid;
+    grid-auto-rows: max-content;
+    overflow-y: scroll;
+    flex: 1 1;
+}
+.search-box{
+    outline-width: 0;
+    border: none;
+    margin-left: 12px;
+    font-size: 1.4rem;
+    width: 80%;
+}
+
+.sb-headng {
+    margin: 20px 30px;
+}
+.align-center {
+    justify-content: center !important;
+    align-items: center !important;
+}
+.chat-responsive-icon{
+    display: none !important;
+}
+/* Chat Area */
+
+
+.chatarea-container{
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+   
+}
+.conversation-container:hover {
+    background: rgba(208, 213, 218,0.3 );
+}
+.con-title-dark{
+    background-color: transparent;
+    color: whitesmoke;
+}
+.chat-header {
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conversation-container {
+    display: grid;
+    flex-direction: row;
+    grid-auto-flow: column;
+    justify-content: flex-start;
+    grid-template-rows: 1fr;
+    margin: 12px;
+    cursor: pointer;
+    transition-duration: .5s;
+    padding: 15px;
+    border-radius: 12px;
+}
+.conversation-none{
+    display: none;
+}
+.con-icon{
+    margin-right: 20px;
+    display: flex;
+    
+    align-items: center;
+    background-color: rgb(148, 241, 241);
+    height: 32px;
+    color: rgb(148, 241, 241);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0rem;
+    font-weight: bolder;
+    width: 32px;
+    padding: 2px;
+    border-radius: 50%;
+ 
+    align-self: center;
+}
+.con-align {
+    display: flex;
+    flex-direction: column;
+}
+.con-title .con-lastmessage .con-timestamp{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .75rem;
+    color: rgba(0, 0, 0,0.54);
+    flex: 0.7;
+
+}
+.con-title{
+    
+    font-weight: bold;
+}
+.con-timestamp{
+    justify-self: flex-end;
+}
+
+
+.chat-left {
+    background-color: #d7dcdd;
+    padding: 20px;
+    /* height: 40px; */
+    align-items: center;
+    display: flex;
+    border-radius: 12px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: max-content;
+    margin: 10px 40px;
+}
+
+.chat-box {
+    display: flex;
+    flex: 0.9 ;
+    background-color: white;
+    margin: 5px;
+    padding: 4px;
+    border-radius: 12px;
+    
+    overflow-y: scroll;
+   
+    
+}
+.chat-align{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.align-right {
+    display: flex;
+   
+    justify-content: flex-end;
+}
+
+.align-left {
+    display: flex;
+  
+    justify-content: flex-start;
+}
+
+.msg-area{
+    display: flex;
+    flex: 0.1;
+    background-color: white;
+    margin: 5px;
+    padding: 4px; 
+    border-radius: 12px;  
+    justify-content: space-between;
+
+}
+.msg-input{
+    outline-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+    width: 100%;
+    outline: none;
+}
+
+.msg-box{
+    margin: 0px 25px;
+    align-items: center;
+    display: flex;
+    width: 90%;
+}
+.msg-content {
+    display: flex;
+    margin: 5px;
+}
+
+.chat-right {
+    background-color: #d7dafa;
+    padding: 20px;
+    /* height: 40px; */
+    align-items: center;
+    display: flex;
+    border-radius: 12px;
+    justify-content: flex-end;
+    width: max-content;
+   
+    margin: 20px 0px; 
+}
+.chat-right-dark {
+    background-color: rgba(0, 89, 191, 0.7); 
+}
+.chat-left-dark {
+    background-color: #232f37;
+}
+
+.react-input-emoji--container{
+   
+    background: #2d3941;
+    outline: black;
+    color: whitesmoke;
+}
+
+
+/* Weclome */
+
+
+.welcome-area {
+    display: flex;
+    
+   
+        flex: 0.7;
+       
+        flex-direction: column;
+        
+    
+   
+ /* background-color: rgb(215, 218, 250); */
+   
+    justify-content: center;
+    align-items: center;
+}
+.welcome-img {
+    width: 80%;
+}
+
+.welcome-user-name {
+    color: chartreuse;
+}
+/* Login */
+
+.login-container{
+    background-color: rgb(215, 218, 250);
+    height: 90vh;
+    width: 90vw;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.login-container-dark{
+    background-color: rgb(44 51 61);
+}
+.login-box {
+    display: flex;
+ 
+    width: 90%;
+    height: 250px;
+    background: white;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+.login-form {
+    flex-direction: column;
+    display: flex;
+}
+
+.login-input {
+    border-radius: 12px;
+    outline-width: 0;
+    padding: 15px 35px;
+    font-size: medium;
+}
+.login-btn {
+    padding: 15px;
+    background: black;
+    color: white;
+    border-radius: 12px;
+    margin: 12px 0px;
+    border: none;
+    cursor: pointer;
+}
+.login-heading {
+    margin: 20px auto;
+    border: 5px solid #2533c9;
+    padding: 15px;
+    border-radius: 22px;
+    border-style: dashed;
+    color: #2533c9;
+    font-family: ui-monospace;
+}
+.login-label {
+    margin: 10px 0px;
+    font-size: 20px;
+}
+.login-link {
+    text-decoration: none;
+    font-size: 18px;
+}
+.login-para {
+    font-size: 22px;
+}
+.login-link-dark{
+    color: #a7a7f5 !important;
+}
+.login-btn-dark{
+    background-color: white;
+    color: black;
+}
+/* Online Img */
+.online-img {
+    width: 70px;
+}
+.online-span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Online Users */
+.search-scroll {
+    overflow-y: scroll;
+}
+/* Error Page */
+.error-container{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    
+}
+.error-heading {
+    font-size: 12rem;
+    color: rgb(3 105 161);
+}
+.error-btn {
+    width: 150px;
+    background-color: rgb(14 165 233);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 45px;
+}
+.error-anchr{
+    color: white;
+    text-decoration: none;
+}
+.error-btn:hover {
+   
+    background-color: transparent;
+    color: rgb(14 165 233);
+    border: 1px solid rgb(14 165 233);
+    
+   
+}
+.error-anchr:hover {
+    color: rgb(14 165 233);
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+/* Slider Bar phone */
+
+.sb-phone-conversation,.sb-phone-conversation-resp {
+   display: none;
+}
+.slider-none{
+    display: none;
+}
