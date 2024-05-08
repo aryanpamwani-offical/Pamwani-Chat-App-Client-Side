@@ -6,8 +6,8 @@ import axios from 'axios'
 export const Signup = () => {
  
 const [data, setData] = useState({name:"",email:"",password:""});
-const [ setLoading] = useState(false)
-const [setSignupStatus]=useState("")
+const [ loading,setLoading] = useState(false)
+const [SignupStatus,setSignupStatus]=useState("")
 
 const navigate=useNavigate();
 const changeHandler=(e)=>{

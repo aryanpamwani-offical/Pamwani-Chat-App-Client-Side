@@ -38,7 +38,7 @@ let loginHandler;
   
     // console.log(response.data.token)
    await localStorage.setItem("userData", JSON.stringify(response));
-  await navigate('/app')
+  await window.location.assign('/app')
    }).catch((error)=>{
     console.log(error)
    });
